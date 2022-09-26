@@ -3,11 +3,9 @@ import Sidebar from './components/Sidebar';
 
 function App() {
   return (
-    <div className="">
+    <div className='flex'>
       <Sidebar/>
-    <h1>
-      app showing
-    </h1>
+      <h1 className='p-7 text-lg font-extrabold bg-slate-300 flex-1 h-screen'>home page</h1>
     </div>
   );
 }
