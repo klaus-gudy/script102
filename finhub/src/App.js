@@ -1,42 +1,24 @@
 import React from 'react';
 import Sidebar from './components/Sidebar';
 
+import {Route, Routes} from 'react-router-dom';
+
+import Home from './pages/Home';
+import Add from './pages/Add';
+import Customers from './pages/Customers';
+import Settings from './pages/Settings';
+
 function App() {
   return (
     <div className='flex'>
       <Sidebar/>
-      <div className='p-7   bg-slate-300 flex-1 h-screen '>
-        <h1 className='text-lg font-extrabold mb-7'>CREATE A NEW CUSTOMER</h1>
-        <form className='mt-4 bg-stone-600 flex flex-row  justify-around p-16 h-[80%] '>
-          <div className='flex flex-col bg-stone-400 justify-around p-7'>
-            <div className='flex flex-row'>
-            <label>password</label>
-            <input type='text'></input>
-            </div>
-            <div className='flex flex-row'>
-            <label>password</label>
-            <input type='text'></input>
-            </div>
-            <div className='flex flex-row'>
-            <label>password</label>
-            <input type='text'></input>
-            </div>
-          </div>
-          <div className='flex flex-col bg-stone-400 justify-around p-7'>
-            <div className='flex flex-row'>
-            <label>password</label>
-            <input type='text'></input>
-            </div>
-            <div className='flex flex-row'>
-            <label>password</label>
-            <input type='text'></input>
-            </div>
-            <div className='flex flex-row'>
-            <label>password</label>
-            <input type='text'></input>
-            </div>
-          </div>
-        </form>
+      <div className='p-7   bg-slate-300 flex-1'>
+        <Routes>
+          <Route path='/' element={ <Home/> }/>
+          <Route path='/add' element={ <Add/> }/>
+          <Route path='/customers' element={ <Customers/> }/>
+          <Route path='/settings' element={ <Settings/> }/>
+        </Routes>
       </div>
     </div>
   );
@@ -49,3 +31,4 @@ export default App;
 //           htmlFor="fname">{label}</label>
 //         <input className='border-2 rounded border-gray-600 h-11 text-xl px-2' type={type} name="fname" id="fname" placeholder={placeholder} required />
 //     </div> */}
+
