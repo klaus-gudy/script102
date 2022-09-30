@@ -2,13 +2,13 @@ import React from 'react'
 
 function Customers() {
   return (
-    <div>
-        <h1 className="text-lg font-extrabold mb-7">CREATE A NEW CUSTOMER</h1>
-      <div class="flex flex-col pt-7">
+    <div className='p-7 flex-1 h-screen '>
+        <h1 className="text-lg text-center font-extrabold mb-7">VIEW CUSTOMERS</h1>
+      <div class="flex flex-col">
         <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
             <div class="overflow-hidden">
-              <table class="min-w-full rounded-md">
+              <table class="min-w-full">
                 <thead class="bg-white border-b">
                   <tr>
                     <th

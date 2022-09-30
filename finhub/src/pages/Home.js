@@ -3,7 +3,7 @@ import React from 'react'
 function Home() {
   return (
     <div className='p-7 flex-1 h-screen '>
-      <h1 className="text-lg font-extrabold mb-7">HOME PAGE FORM</h1>
+      <h1 className="text-lg text-center font-extrabold mb-7">HOME PAGE FORM</h1>
       <div className='mt-5 md:col-span-2 md:mt-0'>
       <form className="mt-4  h-[80%] ">
         <div className='sm:rounded-md overflow-hidden'>
