@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Settings() {
+function Forum() {
   return (
     <div className='p-7 flex-1 h-screen'>
-        <h1>Settings</h1>
+        <h1>Forum</h1>
     </div>
   )
 }
 
-export default Settings
+export default Forum

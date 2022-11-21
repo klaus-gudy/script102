@@ -7,8 +7,8 @@ import { BiLogIn } from "react-icons/bi";
 
 const Menus = [
   {title:'Home', icon:<AiFillHome/>, link:'/'},
-  {title:'Add Customer', icon: <BsFillPersonPlusFill/> , link:'/add'},
-  {title:'View Customer', icon:<BsFillPersonLinesFill/>, link:'/customers'},
+  {title:'Courses', icon: <BsFillPersonPlusFill/> , link:'/courses'},
+  {title:'Forum', icon:<BsFillPersonLinesFill/>, link:'/forum'},
   {title:'Settings', icon:<AiFillSetting/>, link:'/settings'},
   {title:'Logout', icon:<BiLogIn/>, link:'/logout'},
 ]
@@ -16,7 +16,7 @@ const Menus = [
 function Sidebar() {
   return (
     <div className='w-72 bg-slate-400 p-5 min-h-screen pt-8'>
-      <h1 className='font-extrabold '>sidebar</h1>
+      <h1 className='font-extrabold '>UNIHUB</h1>
       <ul className='pt-6 mt-10 space-y-4'>
       {Menus.map(
         (menu,index)=>(
